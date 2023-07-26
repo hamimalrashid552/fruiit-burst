@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <script src="https://kit.fontawesome.com/87539e8560.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
@@ -21,8 +23,14 @@
 <body class="font-lato">
     <header>
         <nav>
-            <div class="navbar bg-[#F85559] text-white">
-                <div class="navbar-start">
+            <div class="navbar bg-[#F85559] text-white lg:px-14 lg:w-[1440px] lg:h-[120px] lg:mx-60 mt-12 rounded-full p-0">
+                <div class="navbar-start hidden lg:flex ">
+                    <ul class="menu  menu-horizontal ml-0 p-0 text-lg">
+                        <li><a>Home </a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruit</a></li>
+                    </ul>
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -33,26 +41,22 @@
                         </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Parent</a></li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Home </a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruit</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="navbar-center ">
                     <a class="btn btn-ghost normal-case text-xl">
                         <img src="images/logo.png" alt="">
-                        <h4 class="text-4xl">Fruit Burst</h4>
+                        <h5 class="text-4xl">Fruit Burst</h5>
                     </a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home </a></li>
-                        <li><a>About Us</a></li>        
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruit</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <a class="btn">Button</a>
+                <div class="navbar-end ">
+                    <input class="rounded-full w-[400px] h-[56px] p-4" type="text" placeholder="Search here "
+                        class="input input-bordered  md:w-auto " />
                 </div>
             </div>
         </nav>
